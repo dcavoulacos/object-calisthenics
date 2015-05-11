@@ -3,9 +3,10 @@ package object_calisthenics.job;
 public class JobPost
 {
   private JobDescription jobDescription;
-  private JobPostDetails postDetails;
+  private JobDetails     postDetails;
 
-  public JobPost(JobDescription jobDescription, JobPostDetails postDetails) {
+  public JobPost(JobDescription jobDescription,
+                 JobDetails postDetails) {
     this.jobDescription = jobDescription;
     this.postDetails    = postDetails;
   }

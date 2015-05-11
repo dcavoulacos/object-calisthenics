@@ -1,13 +1,28 @@
 package object_calisthenics.employer;
 
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
+import java.util.Iterator;
 
-public class EmployerJobs
+import object_calisthenics.job.Job;
+
+public class EmployerJobs implements Iterable<EmployerJob>
 {
-  private final Collection<EmployerJob> postedJobs;
+  private static Collection<EmployerJob> postedJobs = new ArrayList<EmployerJob>();
 
-  public EmployerJobs() {
-    this.postedJobs = Collections.emptyList();
+  public EmployerJobs() {}
+
+  @Override
+  public Iterator<EmployerJob> iterator()
+  {
+    return postedJobs.iterator();
+  }
+
+  public void listNewJob(Job newJob)
+  {
+    postedJobs.add(new EmployerJob(newJob));
+  }
+  public boolean includes(Job job) {
+    return true;
   }
 }
