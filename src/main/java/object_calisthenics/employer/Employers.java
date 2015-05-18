@@ -1,33 +1,22 @@
 package object_calisthenics.employer;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
+import java.util.Collections;
 
-public class Employers implements Iterable<Employer>
+public class Employers
 {
-  private static Collection<Employer> employers = new ArrayList<Employer>();
+  private final Collection<Employer> employers;
 
-  public Employers() {}
+  public Employers() { employers = Collections.emptyList(); }
+  public Employers(Collection<Employer> newEmployers) { employers = newEmployers; }
 
-  public Employers(Collection<Employer> newEmployers)
-  {
-    employers = newEmployers;
+  public Employers addNewEmployer(Employer newEmployer) {
+    List<Employer> existingEmployers = new ArrayList<>(employers);
+    existingEmployers.add(newEmployer);
+    return new Employers(existingEmployers);
   }
 
-  @Override
-  public Iterator<Employer> iterator() {
-    return employers.iterator();
-  }
-
-  public Employer createEmployerNamed(String employerName) {
-    EmployerName name = new EmployerName(employerName);
-    Employer employer = new Employer((name));
-    employers.add(employer);
-    return employer;
-  }
-
-  public int size() {
-    return employers.size();
-  }
+  public int size() { return employers.size(); }
 }

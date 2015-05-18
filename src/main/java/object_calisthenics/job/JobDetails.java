@@ -1,14 +1,15 @@
 package object_calisthenics.job;
 
-import object_calisthenics.employer.Employer;
-
 public class JobDetails
 {
-  private Employer    employer;
+  private JobType     type;
   private JobPostDate postDate;
 
-  public JobDetails(Employer employer) {
-    this.employer = employer;
+  public JobDetails(JobType type) {
+    this.type = type;
     this.postDate = new JobPostDate();
   }
+
+  public boolean isJReq() { return type.equals(JobType.JReq); }
+  public boolean isATS() { return type.equals(JobType.ATS); }
 }

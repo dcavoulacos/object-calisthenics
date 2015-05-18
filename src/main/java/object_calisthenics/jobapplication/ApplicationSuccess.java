@@ -1,10 +1,6 @@
 package object_calisthenics.jobapplication;
 
-public class ApplicationSuccess
+public enum ApplicationSuccess
 {
-  private boolean applicationSuccess;
-
-  public ApplicationSuccess() {
-    this.applicationSuccess = false;
-  }
+  SUCCESS, FAILURE
 }

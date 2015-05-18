@@ -1,12 +1,16 @@
 package object_calisthenics.job;
 
+import object_calisthenics.employer.Employer;
+
 public class JobDescription
 {
   private JobTitle jobTitle;
-  private JobType  jobType;
+  private Employer employer;
 
-  public JobDescription(JobTitle jobTitle, JobType jobType) {
-    this.jobTitle  = jobTitle;
-    this.jobType   = jobType;
+  public JobDescription(JobTitle jobTitle, Employer employer) {
+    this.jobTitle = jobTitle;
+    this.employer = employer;
   }
+
+  public boolean postedBy(Employer poster) { return employer.equals(poster); }
 }

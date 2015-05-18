@@ -1,12 +1,14 @@
 package object_calisthenics.jobapplication;
 
+import object_calisthenics.job.Job;
+
 public class JobApplication
 {
-  private Position           position;
+  private Job                job;
   private ApplicationDetails details;
 
-  public JobApplication(Position position, ApplicationDetails details) {
-    this.position = position;
+  public JobApplication(Job job, ApplicationDetails details) {
+    this.job      = job;
     this.details  = details;
   }
 }

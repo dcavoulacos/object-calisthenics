@@ -1,5 +1,6 @@
 package object_calisthenics.jobseeker;
 
+import object_calisthenics.job.Job;
 import object_calisthenics.resume.Resumes;
 
 public class JobseekerResources
@@ -11,4 +12,6 @@ public class JobseekerResources
     this.resumes  = new Resumes();
     this.myJobs   = new JobseekerJobs();
   }
+
+  public void saveJob(Job job) { myJobs.addNewSavedJob(job); }
 }

@@ -6,9 +6,6 @@ import java.util.Collections;
 public class JobApplications
 {
   private final Collection<JobApplication> jobApplications;
+  public JobApplications() { this.jobApplications = Collections.emptySet(); }
 
-  public JobApplications()
-  {
-    this.jobApplications = Collections.emptySet();
-  }
 }

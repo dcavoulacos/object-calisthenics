@@ -5,8 +5,8 @@ public class ApplicationStatus
   private ApplicationDate     applicationDate;
   private ApplicationSuccess  success;
 
-  public ApplicationStatus() {
+  public ApplicationStatus(ApplicationSuccess success) {
     this.applicationDate = new ApplicationDate();
-    this.success         = new ApplicationSuccess();
+    this.success         = success;
   }
 }

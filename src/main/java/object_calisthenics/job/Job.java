@@ -1,20 +1,20 @@
 package object_calisthenics.job;
 
-import object_calisthenics.jobapplication.*;
+import object_calisthenics.employer.Employer;
 
 public class Job
 {
-  private JobPost         jobPost;
-  private JobApplications applications;
+  private JobDescription jobDescription;
+  private JobDetails     details;
 
-  public Job(JobPost jobPost)
+  public Job(JobDescription jobDescription, JobDetails details)
   {
-    this.jobPost = jobPost;
-    this.applications = new JobApplications();
+    this.jobDescription = jobDescription;
+    this.details        = details;
   }
 
-  public static Job createNewJob(JobDescription description, JobDetails details) {
-    JobPost post = new JobPost(description, details);
-    return new Job(post);
+  public boolean isJReq() { return details.isJReq(); }
+  public boolean postedBy(Employer employer) {
+    return jobDescription.postedBy(employer);
   }
 }
