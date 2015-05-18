@@ -46,12 +46,4 @@ public class EmployerTests
     assert systemJobs.postedBy(johnWick).size() == 2;
     assert systemJobs.postedBy(notJohn).size() == 1;
   }
-
-//  NOT TESTS
-//  public Job createJob(String jobTitle, JobType type, Employer employer) {
-//    JobDescription description = new JobDescription(new JobTitle(jobTitle),
-//                                                    employer);
-//    JobDetails details = new JobDetails(type);
-//    return new Job(description, details);
-//  }
 }

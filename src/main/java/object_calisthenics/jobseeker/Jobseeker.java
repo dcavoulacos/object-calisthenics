@@ -13,4 +13,6 @@ public class Jobseeker
   }
 
   public void saveJob(Job job) { resources.saveJob(job); }
+  public boolean hasSaved(Job job) { return resources.hasSaved(job); }
+
 }

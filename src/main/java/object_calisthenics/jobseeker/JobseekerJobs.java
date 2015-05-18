@@ -15,4 +15,5 @@ public class JobseekerJobs
   }
 
   public void addNewSavedJob(Job job) { savedJobs = savedJobs.addJob(job); }
+  public boolean hasSaved(Job job) { return savedJobs.include(job); }
 }

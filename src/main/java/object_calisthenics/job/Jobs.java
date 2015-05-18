@@ -25,6 +25,6 @@ public class Jobs
     allJobs.removeIf(j -> !j.postedBy(employer));
     return new Jobs(allJobs);
   }
-
+  public boolean include(Job job) { return jobs.contains(job); }
   public int size() { return jobs.size(); }
 }
