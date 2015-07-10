@@ -12,5 +12,7 @@ public class JobDescription
     this.employer = employer;
   }
 
-  public boolean postedBy(Employer poster) { return employer.equals(poster); }
+  public boolean postedBy(Employer poster) {
+    return employer.equals(poster);
+  }
 }

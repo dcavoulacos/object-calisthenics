@@ -1,6 +1,9 @@
 package object_calisthenics.jobseeker;
 
 import object_calisthenics.job.Job;
+import object_calisthenics.jobapplication.Candidate;
+import object_calisthenics.resume.*;
+import object_calisthenics.system.SystemJobApplications;
 
 public class Jobseeker
 {
@@ -12,7 +15,19 @@ public class Jobseeker
     this.resources  = new JobseekerResources();
   }
 
-  public void saveJob(Job job) { resources.saveJob(job); }
-  public boolean hasSaved(Job job) { return resources.hasSaved(job); }
+  public void saveJob(Job job) {
+    resources.saveJob(job);
+  }
 
+  public boolean hasSaved(Job job) {
+    return resources.hasSaved(job);
+  }
+
+  public void applyTo(Job job, SystemJobApplications destination) {
+    this.applyTo(job, new NullResume(), destination);
+  }
+
+  public void applyTo(Job job, Resume resume, SystemJobApplications destination) {
+    job.addNewApplication(this, resume, destination);
+  }
 }

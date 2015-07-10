@@ -14,5 +14,7 @@ public class SystemJobseekers
     return Jobseeker;
   }
 
-  public int size() { return systemJobseekers.size(); }
+  public int size() {
+    return systemJobseekers.size();
+  }
 }

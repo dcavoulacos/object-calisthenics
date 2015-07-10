@@ -8,17 +8,22 @@ import object_calisthenics.resume.*;
 public class SystemJobApplications
 {
   private JobApplications systemApplications;
-  public SystemJobApplications() { this.systemApplications = new JobApplications(); }
+  public SystemJobApplications() {
+    this.systemApplications = new JobApplications();
+  }
 
-  public JobApplication createApplication(Job job, Jobseeker applicant) {
-    Candidate candidate = new Candidate(applicant, new NullResume());
-    ApplicationSuccess success = getSuccess(job, new NullResume());
+  public void createNewApplication(Job job, Jobseeker applicant, Resume resume) {
+    Candidate candidate = new Candidate(applicant, resume);
+    ApplicationSuccess success = resume.canBeUsedForJReq();
     ApplicationDetails details = new ApplicationDetails(candidate, new ApplicationStatus(success));
-    return new JobApplication(job, details);
+    systemApplications = systemApplications.add(new JobApplication(job, details));
   }
 
-  public ApplicationSuccess getSuccess (Job job, Resume resume) {
-    if (job.isJReq() && !resume.exists()) { return ApplicationSuccess.FAILURE; }
-    return ApplicationSuccess.SUCCESS;
+  public int size() {
+    return systemApplications.size();
   }
+//  public ApplicationSuccess getSuccess (Job job, Resume resume) {
+//    if (job.isJReq() && !resume.exists()) { return ApplicationSuccess.FAILURE; }
+//    return ApplicationSuccess.SUCCESS;
+//  }
 }

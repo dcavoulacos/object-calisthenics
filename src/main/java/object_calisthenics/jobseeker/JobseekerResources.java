@@ -13,6 +13,11 @@ public class JobseekerResources
     this.myJobs   = new JobseekerJobs();
   }
 
-  public void saveJob(Job job) { myJobs.addNewSavedJob(job); }
-  public boolean hasSaved(Job job) {return myJobs.hasSaved(job); }
+  public void saveJob(Job job) {
+    myJobs.addNewSavedJob(job);
+  }
+
+  public boolean hasSaved(Job job) {
+    return myJobs.hasSaved(job);
+  }
 }

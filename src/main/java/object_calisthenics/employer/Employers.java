@@ -9,8 +9,13 @@ public class Employers
 {
   private final Collection<Employer> employers;
 
-  public Employers() { employers = Collections.emptyList(); }
-  public Employers(Collection<Employer> newEmployers) { employers = newEmployers; }
+  public Employers() {
+    employers = Collections.emptyList();
+  }
+
+  public Employers(Collection<Employer> newEmployers) {
+    employers = newEmployers;
+  }
 
   public Employers addNewEmployer(Employer newEmployer) {
     List<Employer> existingEmployers = new ArrayList<>(employers);
@@ -18,5 +23,7 @@ public class Employers
     return new Employers(existingEmployers);
   }
 
-  public int size() { return employers.size(); }
+  public int size() {
+    return employers.size();
+  }
 }

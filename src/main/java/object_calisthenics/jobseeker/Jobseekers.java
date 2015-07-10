@@ -18,5 +18,7 @@ public class Jobseekers
     return new Jobseekers(existingJobseekers);
   }
 
-  public int size() { return jobseekers.size(); }
+  public int size() {
+    return jobseekers.size();
+  }
 }

@@ -6,7 +6,9 @@ public class SystemEmployers
 {
   private Employers systemEmployers;
 
-  public SystemEmployers() { this.systemEmployers = new Employers(); }
+  public SystemEmployers() {
+    this.systemEmployers = new Employers();
+  }
 
   public Employer createEmployer(String name) {
     Employer employer = new Employer(new EmployerName(name));
@@ -14,5 +16,7 @@ public class SystemEmployers
     return employer;
   }
 
-  public int size() { return systemEmployers.size(); }
+  public int size() {
+    return systemEmployers.size();
+  }
 }
