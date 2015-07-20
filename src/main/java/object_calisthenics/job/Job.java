@@ -1,11 +1,8 @@
 package object_calisthenics.job;
 
 import object_calisthenics.employer.Employer;
-import object_calisthenics.jobseeker.Jobseeker;
-import object_calisthenics.resume.Resume;
-import object_calisthenics.system.SystemJobApplications;
 
-public abstract class Job
+public class Job
 {
   private JobDescription jobDescription;
   private JobPostDate    postDate;
@@ -16,11 +13,8 @@ public abstract class Job
     this.postDate        = new JobPostDate();
   }
 
-  public boolean postedBy(Employer employer) {
+  public boolean postedBy(Employer employer)
+  {
     return jobDescription.postedBy(employer);
   }
-
-  public abstract void addNewApplication(Jobseeker candidate,
-                                         Resume resume,
-                                         SystemJobApplications destination);
 }

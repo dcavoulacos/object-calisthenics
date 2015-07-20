@@ -2,13 +2,13 @@ package object_calisthenics.resume;
 
 import object_calisthenics.jobseeker.Jobseeker;
 
-public class NullResume implements Resume
+public class InvalidResume implements Resume
 {
-  public NullResume() {}
+  public InvalidResume() {}
 
   public boolean exists()
   {
-    return false;
+    return true;
   }
 
   public boolean belongsTo(Jobseeker jobseeker)

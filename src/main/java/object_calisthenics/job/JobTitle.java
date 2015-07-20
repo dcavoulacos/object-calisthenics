@@ -4,7 +4,8 @@ public class JobTitle
 {
   private String jobTitle;
 
-  public JobTitle(String jobTitle) {
+  public JobTitle(String jobTitle)
+  {
     this.jobTitle = jobTitle;
   }
 }

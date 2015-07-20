@@ -6,7 +6,8 @@ public class ApplicationDate
 {
   private Date applicationDate;
 
-  public ApplicationDate() {
+  public ApplicationDate()
+  {
     applicationDate = new Date();
   }
 }

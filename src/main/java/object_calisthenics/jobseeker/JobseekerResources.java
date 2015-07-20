@@ -1,23 +1,27 @@
 package object_calisthenics.jobseeker;
 
 import object_calisthenics.job.Job;
+import object_calisthenics.job.Jobs;
 import object_calisthenics.resume.Resumes;
 
 public class JobseekerResources
 {
   private Resumes       resumes;
-  private JobseekerJobs myJobs;
+  private Jobs          savedJobs;
 
-  public JobseekerResources() {
-    this.resumes  = new Resumes();
-    this.myJobs   = new JobseekerJobs();
+  public JobseekerResources()
+  {
+    this.resumes   = new Resumes();
+    this.savedJobs = new Jobs();
   }
 
-  public void saveJob(Job job) {
-    myJobs.addNewSavedJob(job);
+  public void saveJob(Job job)
+  {
+    savedJobs = savedJobs.addNew(job);
   }
 
-  public boolean hasSaved(Job job) {
-    return myJobs.hasSaved(job);
+  public int numberOfSavedJobs()
+  {
+    return savedJobs.size();
   }
 }

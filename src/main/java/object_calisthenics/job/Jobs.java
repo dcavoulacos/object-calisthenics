@@ -13,36 +13,35 @@ public class Jobs
 {
   private final Collection<Job> jobs;
 
-  public Jobs() {
+  public Jobs()
+  {
     jobs = Collections.emptyList();
   }
 
-  public Jobs(Collection<Job> newJobs) {
+  public Jobs(Collection<Job> newJobs)
+  {
     jobs = newJobs;
   }
 
-  public Jobs addJob(Job newJob) {
+  public Jobs addNew(Job newJob)
+  {
     List<Job> existingJobs = new ArrayList<>(jobs);
     existingJobs.add(newJob);
     return new Jobs(existingJobs);
   }
 
   public Jobs postedBy(Employer employer) {
-    List<Job> allJobs = new ArrayList<>(jobs);
-    allJobs.removeIf(j -> !j.postedBy(employer));
-    return new Jobs(allJobs);
+    List<Job> selectJobs = jobs.stream().filter(j -> j.postedBy(employer)).collect(toList());
+    return new Jobs(selectJobs);
   }
-
-//  public Jobs postedBy(Employer employer) {
-//    List<Job> selectJobs = jobs.stream().filter(j -> j.postedBy(employer)).collect(toList());
-//    return new Jobs(selectJobs);
+//
+//  public boolean include(Job job)
+//  {
+//    return jobs.contains(job);
 //  }
 
-  public boolean include(Job job) {
-    return jobs.contains(job);
-  }
-
-  public int size() {
+  public int size()
+  {
     return jobs.size();
   }
 }

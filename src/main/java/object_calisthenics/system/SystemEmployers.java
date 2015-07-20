@@ -1,22 +1,25 @@
 package object_calisthenics.system;
 
-import object_calisthenics.employer.*;
+import object_calisthenics.employer.Employer;
+import object_calisthenics.employer.Employers;
 
 public class SystemEmployers
 {
   private Employers systemEmployers;
 
-  public SystemEmployers() {
+  public SystemEmployers()
+  {
     this.systemEmployers = new Employers();
   }
 
-  public Employer createEmployer(String name) {
-    Employer employer = new Employer(new EmployerName(name));
-    systemEmployers = systemEmployers.addNewEmployer(employer);
+  public Employer addNew(Employer employer)
+  {
+    systemEmployers = systemEmployers.addNew(employer);
     return employer;
   }
 
-  public int size() {
+  public int size()
+  {
     return systemEmployers.size();
   }
 }

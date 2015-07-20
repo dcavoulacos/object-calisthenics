@@ -9,21 +9,25 @@ public class Employers
 {
   private final Collection<Employer> employers;
 
-  public Employers() {
+  public Employers()
+  {
     employers = Collections.emptyList();
   }
 
-  public Employers(Collection<Employer> newEmployers) {
+  public Employers(Collection<Employer> newEmployers)
+  {
     employers = newEmployers;
   }
 
-  public Employers addNewEmployer(Employer newEmployer) {
+  public Employers addNew(Employer newEmployer)
+  {
     List<Employer> existingEmployers = new ArrayList<>(employers);
     existingEmployers.add(newEmployer);
     return new Employers(existingEmployers);
   }
 
-  public int size() {
+  public int size()
+  {
     return employers.size();
   }
 }

@@ -1,14 +1,10 @@
 package object_calisthenics.jobapplication;
 
-import object_calisthenics.job.Job;
+import object_calisthenics.jobseeker.Jobseeker;
 
-public class JobApplication
+public interface JobApplication
 {
-  private Job                job;
-  private ApplicationDetails details;
+  boolean belongsTo(Jobseeker jobseeker);
 
-  public JobApplication(Job job, ApplicationDetails details) {
-    this.job      = job;
-    this.details  = details;
-  }
+  boolean wasSuccessful();
 }

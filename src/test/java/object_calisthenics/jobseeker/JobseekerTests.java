@@ -2,50 +2,82 @@ package object_calisthenics.jobseeker;
 
 import org.junit.Test;
 
+import object_calisthenics.EmployerWorkflow;
+import object_calisthenics.JobApplicationWorkflow;
+import object_calisthenics.JobWorkflow;
+import object_calisthenics.JobseekerWorkflow;
+import object_calisthenics.ResumeWorkflow;
 import object_calisthenics.employer.Employer;
 import object_calisthenics.job.*;
 import object_calisthenics.resume.*;
-import object_calisthenics.system.*;
 
 public class JobseekerTests
 {
-  private SystemEmployers       systemEmployers    = new SystemEmployers();
-  private SystemJobseekers      systemJobseekers   = new SystemJobseekers();
-  private SystemJobs            systemJobs         = new SystemJobs();
-  private SystemJobApplications systemApplications = new SystemJobApplications();
+  private JobseekerWorkflow      jobseekerWorkflow      = new JobseekerWorkflow();
+  private JobWorkflow            jobWorkflow            = new JobWorkflow();
+  private EmployerWorkflow       employerWorkflow       = new EmployerWorkflow();
+  private JobApplicationWorkflow jobApplicationWorkflow = new JobApplicationWorkflow();
+  private ResumeWorkflow         resumeWorkflow         = new ResumeWorkflow();
 
   @Test
   public void canCreateJobseeker()
   {
-    systemJobseekers.createJobseeker("Perkins");
-    assert systemJobseekers.size() == 1;
+    jobseekerWorkflow.createJobseeker("Perkins");
+    assert jobseekerWorkflow.totalJobseekers() == 1;
   }
 
   @Test
-  public void canSaveJobs() {
-    Employer viggo = systemEmployers.createEmployer("Viggo");
-    Job newJob = systemJobs.createATSJob("Assassin", viggo);
+  public void canSaveJobs()
+  {
+    Employer viggo = employerWorkflow.createEmployer("Viggo");
+    Job newJob = jobWorkflow.createJob("Assassin", viggo);
 
-    Jobseeker perkins = systemJobseekers.createJobseeker("Perkins");
+    Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
+    assert perkins.numberOfSavedJobs() == 0;
+
     perkins.saveJob(newJob);
-    assert perkins.hasSaved(newJob);
+
+    assert perkins.numberOfSavedJobs() == 1;
   }
 
   @Test
-  public void canApplyToJReqJobWithResume() {
-    Employer viggo = systemEmployers.createEmployer("Viggo");
-    Jobseeker perkins = systemJobseekers.createJobseeker("Perkins");
-    Job newJob = systemJobs.createJReqJob("Assassin", viggo);
-    Resume resume = new RealResume(perkins);
+  public void canApplyToJobWithValidResume()
+  {
+    Employer viggo = employerWorkflow.createEmployer("Viggo");
+    Job newJob = jobWorkflow.createJob("Assassin", viggo);
 
-    viggo.postJob(newJob, systemJobs);
-    perkins.applyTo(newJob, resume, systemApplications);
-    assert systemApplications.size() == 1;
+    Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
+    Resume resume = new ValidResume(perkins);
+    assert jobApplicationWorkflow.totalApplications() == 0;
+
+    jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
+
+    assert jobApplicationWorkflow.totalApplications() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successfulApplicationsBy(perkins).size() == 1;
+  }
+
+  @Test
+  public void canApplyToDifferentJobsWithDifferentResumes()
+  {
+
   }
 
 //  @Test
+//  public void canApplyToJReqJobWithResume() {
+//    Employer viggo = systemEmployers.addNew("Viggo");
+//    Jobseeker perkins = systemJobseekers.createJobseeker("Perkins");
+//    Job newJob = systemJobs.createJReqJob("Assassin", viggo);
+//    Resume resume = new ValidResume(perkins);
+//
+//    viggo.postJob(newJob, systemJobs);
+//    perkins.applyTo(newJob, resume, systemApplications);
+//    assert systemApplications.size() == 1;
+//  }
+
+//  @Test
 //  public void applyingToJReqJobWithoutResumeResultsInFailedApplication() {
-//    Employer viggo = systemEmployers.createEmployer("Viggo");
+//    Employer viggo = systemEmployers.addNew("Viggo");
 //    Jobseeker perkins = systemJobseekers.createJobseeker("Perkins");
 //    Job newJob = systemJobs.createJReqJob("Assassin", viggo);
 //
@@ -55,7 +87,7 @@ public class JobseekerTests
 
 //  @Test
 //  public void canApplyToATSJob() {
-//    Employer viggo = systemEmployers.createEmployer("Viggo");
+//    Employer viggo = systemEmployers.addNew("Viggo");
 //    Job newJob = systemJobs.createATSJob("Assassin", viggo);
 //    viggo.postJob(newJob, systemJobs);
 //

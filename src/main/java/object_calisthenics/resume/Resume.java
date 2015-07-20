@@ -1,11 +1,10 @@
 package object_calisthenics.resume;
 
-import object_calisthenics.job.Job;
-import object_calisthenics.jobapplication.ApplicationSuccess;
+import object_calisthenics.jobseeker.Jobseeker;
 
-public abstract class Resume
+public interface Resume
 {
-  public abstract boolean exists();
+  boolean exists();
 
-  public abstract ApplicationSuccess canBeUsedForJReq();
+  boolean belongsTo(Jobseeker jobseeker);
 }

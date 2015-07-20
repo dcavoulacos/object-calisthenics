@@ -4,7 +4,8 @@ public class JobseekerName
 {
   private String name;
 
-  public JobseekerName(String name) {
+  public JobseekerName(String name)
+  {
     this.name = name;
   }
 }

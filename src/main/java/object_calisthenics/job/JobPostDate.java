@@ -6,7 +6,8 @@ public class JobPostDate
 {
   private Date postDate;
 
-  public JobPostDate() {
+  public JobPostDate()
+  {
     postDate = new Date();
   }
 }

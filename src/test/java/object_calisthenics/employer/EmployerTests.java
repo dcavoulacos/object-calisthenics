@@ -2,48 +2,46 @@ package object_calisthenics.employer;
 
 import org.junit.Test;
 
-import object_calisthenics.job.*;
-import object_calisthenics.system.*;
+import object_calisthenics.EmployerWorkflow;
+import object_calisthenics.JobWorkflow;
 
 public class EmployerTests
 {
-  private SystemEmployers systemEmployers = new SystemEmployers();
-  private SystemJobs      systemJobs      = new SystemJobs();
+  private EmployerWorkflow employerWorkflow = new EmployerWorkflow();
+  private JobWorkflow      jobWorkflow      = new JobWorkflow();
 
   @Test
   public void canCreateEmployer()
   {
-    systemEmployers.createEmployer("John Wick");
-    assert systemEmployers.size() == 1;
+    employerWorkflow.createEmployer("John Wick");
+    assert employerWorkflow.totalEmployers() == 1;
   }
 
   @Test
   public void canPostAJob()
   {
-    Employer johnWick = systemEmployers.createEmployer("John Wick");
-
-    Job newJob = systemJobs.createJReqJob("Hitman", johnWick);
-    assert systemJobs.size() == 0;
-    johnWick.postJob(newJob, systemJobs);
-    assert systemJobs.size() == 1;
+    Employer johnWick = employerWorkflow.createEmployer("John Wick");
+    assert jobWorkflow.totalJobs() == 0;
+    jobWorkflow.createJob("Hitman", johnWick);
+    assert jobWorkflow.totalJobs() == 1;
   }
 
   @Test
   public void canSeePostedJobs()
   {
-    Employer johnWick = systemEmployers.createEmployer("John Wick");
-    Employer notJohn = systemEmployers.createEmployer("Baba Yaga");
+    Employer johnWick = employerWorkflow.createEmployer("John Wick");
+    Employer notJohn = employerWorkflow.createEmployer("Baba Yaga");
+    assert jobWorkflow.totalJobs() == 0;
 
-    Job newJob = systemJobs.createATSJob("Hitman", johnWick);
-    Job newJob2 = systemJobs.createJReqJob("Hitman", johnWick);
-    Job newJob3 = systemJobs.createJReqJob("Russian Demon", notJohn);
+    jobWorkflow.createJob("Hitman", johnWick);
+    jobWorkflow.createJob("Assistant Hitman", johnWick);
 
-    johnWick.postJob(newJob, systemJobs);
-    johnWick.postJob(newJob2, systemJobs);
-    notJohn.postJob(newJob3, systemJobs);
+    assert jobWorkflow.totalJobs() == 2;
+    assert jobWorkflow.jobsPostedBy(johnWick).size() == 2;
 
-    assert systemJobs.size() == 3;
-    assert systemJobs.postedBy(johnWick).size() == 2;
-    assert systemJobs.postedBy(notJohn).size() == 1;
+    jobWorkflow.createJob("Russian Demon", notJohn);
+
+    assert jobWorkflow.totalJobs() == 3;
+    assert jobWorkflow.jobsPostedBy(johnWick).size() == 2;
   }
 }

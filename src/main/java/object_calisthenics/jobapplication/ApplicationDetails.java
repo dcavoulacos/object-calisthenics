@@ -1,13 +1,15 @@
 package object_calisthenics.jobapplication;
 
+import object_calisthenics.job.Job;
 
 public class ApplicationDetails
 {
-  private Candidate         candidate;
-  private ApplicationStatus status;
+  private Job             job;
+  private ApplicationDate applicationDate;
 
-  public ApplicationDetails(Candidate candidate, ApplicationStatus status) {
-    this.candidate = candidate;
-    this.status     = status;
+  public ApplicationDetails(Job job)
+  {
+    this.job             = job;
+    this.applicationDate = new ApplicationDate();
   }
 }
