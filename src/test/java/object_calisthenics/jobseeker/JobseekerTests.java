@@ -30,7 +30,7 @@ public class JobseekerTests
   public void canSaveJobs()
   {
     Employer viggo = employerWorkflow.createEmployer("Viggo");
-    Job newJob = jobWorkflow.createJob("Assassin", viggo);
+    Job newJob = jobWorkflow.createJREQForEmployer("Assassin", viggo);
 
     Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
     assert perkins.numberOfSavedJobs() == 0;
@@ -41,13 +41,13 @@ public class JobseekerTests
   }
 
   @Test
-  public void canApplyToJobWithValidResume()
+  public void canApplyToJReqWithValidResume()
   {
     Employer viggo = employerWorkflow.createEmployer("Viggo");
-    Job newJob = jobWorkflow.createJob("Assassin", viggo);
+    Job newJob = jobWorkflow.createJREQForEmployer("Assassin", viggo);
 
     Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
-    Resume resume = new ValidResume(perkins);
+    Resume resume = resumeWorkflow.newResumeFor(perkins);
     assert jobApplicationWorkflow.totalApplications() == 0;
 
     jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
@@ -58,10 +58,76 @@ public class JobseekerTests
   }
 
   @Test
-  public void canApplyToDifferentJobsWithDifferentResumes()
+  public void canApplyToATSWithValidResume()
   {
+    Employer viggo = employerWorkflow.createEmployer("Viggo");
+    Job newJob = jobWorkflow.createATSForEmployer("Assassin", viggo);
 
+    Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
+    Resume resume = resumeWorkflow.newResumeFor(perkins);
+    assert jobApplicationWorkflow.totalApplications() == 0;
+
+    jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
+
+    assert jobApplicationWorkflow.totalApplications() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successfulApplicationsBy(perkins).size() == 1;
   }
+
+  @Test
+  public void jReqApplicationFailsWithInvalidResume()
+  {
+    Employer viggo = employerWorkflow.createEmployer("Viggo");
+    Job newJob = jobWorkflow.createJREQForEmployer("Assassin", viggo);
+
+    Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
+    Jobseeker vitali = jobseekerWorkflow.createJobseeker("Vitali");
+    Resume resume = resumeWorkflow.newResumeFor(vitali);
+
+    jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
+
+    assert jobApplicationWorkflow.totalApplications() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successfulApplicationsBy(perkins).size() == 0;
+  }
+
+  @Test
+  public void jreqApplicationFailsWithoutResume()
+  {
+    Employer viggo = employerWorkflow.createEmployer("Viggo");
+    Job newJob = jobWorkflow.createJREQForEmployer("Assassin", viggo);
+
+    Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
+    assert jobApplicationWorkflow.totalApplications() == 0;
+
+    jobApplicationWorkflow.createApplicationFor(newJob, perkins);
+
+    assert jobApplicationWorkflow.totalApplications() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successfulApplicationsBy(perkins).size() == 0;
+  }
+
+  @Test
+  public void canApplyToATSWithoutResume()
+  {
+    Employer viggo = employerWorkflow.createEmployer("Viggo");
+    Job newJob = jobWorkflow.createATSForEmployer("Assassin", viggo);
+
+    Jobseeker perkins = jobseekerWorkflow.createJobseeker("Perkins");
+    assert jobApplicationWorkflow.totalApplications() == 0;
+
+    jobApplicationWorkflow.createApplicationFor(newJob, perkins);
+
+    assert jobApplicationWorkflow.totalApplications() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successfulApplicationsBy(perkins).size() == 1;
+  }
+
+//  @Test
+//  public void canApplyToDifferentJobsWithDifferentResumes()
+//  {
+//
+//  }
 
 //  @Test
 //  public void canApplyToJReqJobWithResume() {

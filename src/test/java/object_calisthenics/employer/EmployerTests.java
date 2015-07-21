@@ -22,7 +22,7 @@ public class EmployerTests
   {
     Employer johnWick = employerWorkflow.createEmployer("John Wick");
     assert jobWorkflow.totalJobs() == 0;
-    jobWorkflow.createJob("Hitman", johnWick);
+    jobWorkflow.createJREQForEmployer("Hitman", johnWick);
     assert jobWorkflow.totalJobs() == 1;
   }
 
@@ -33,13 +33,13 @@ public class EmployerTests
     Employer notJohn = employerWorkflow.createEmployer("Baba Yaga");
     assert jobWorkflow.totalJobs() == 0;
 
-    jobWorkflow.createJob("Hitman", johnWick);
-    jobWorkflow.createJob("Assistant Hitman", johnWick);
+    jobWorkflow.createJREQForEmployer("Hitman", johnWick);
+    jobWorkflow.createJREQForEmployer("Assistant Hitman", johnWick);
 
     assert jobWorkflow.totalJobs() == 2;
     assert jobWorkflow.jobsPostedBy(johnWick).size() == 2;
 
-    jobWorkflow.createJob("Russian Demon", notJohn);
+    jobWorkflow.createJREQForEmployer("Russian Demon", notJohn);
 
     assert jobWorkflow.totalJobs() == 3;
     assert jobWorkflow.jobsPostedBy(johnWick).size() == 2;

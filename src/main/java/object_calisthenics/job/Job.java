@@ -1,20 +1,12 @@
 package object_calisthenics.job;
 
 import object_calisthenics.employer.Employer;
+import object_calisthenics.jobapplication.Candidate;
+import object_calisthenics.jobapplication.JobApplication;
 
-public class Job
+public interface Job
 {
-  private JobDescription jobDescription;
-  private JobPostDate    postDate;
+  boolean postedBy(Employer employer);
 
-  public Job(JobDescription jobDescription)
-  {
-    this.jobDescription = jobDescription;
-    this.postDate        = new JobPostDate();
-  }
-
-  public boolean postedBy(Employer employer)
-  {
-    return jobDescription.postedBy(employer);
-  }
+  JobApplication applyWithoutResume(Candidate candidate);
 }

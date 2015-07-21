@@ -5,13 +5,13 @@ import object_calisthenics.jobseeker.Jobseeker;
 
 public class FailedApplication implements JobApplication
 {
-  private Candidate          candidate;
-  private ApplicationDetails details;
+  private final Candidate          candidate;
+  private final ApplicationDetails details;
 
   public FailedApplication(Candidate candidate, Job job)
   {
     this.candidate = candidate ;
-    this.details = new ApplicationDetails(job);
+    this.details   = new ApplicationDetails(job);
   }
 
   public boolean wasSuccessful()

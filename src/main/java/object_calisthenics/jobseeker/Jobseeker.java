@@ -2,29 +2,55 @@ package object_calisthenics.jobseeker;
 
 import object_calisthenics.job.Job;
 import object_calisthenics.job.Jobs;
-import object_calisthenics.resume.*;
-import object_calisthenics.system.SystemJobApplications;
+import object_calisthenics.jobapplication.JobApplication;
+import object_calisthenics.resume.Resume;
 
 public class Jobseeker
 {
-  private JobseekerName       name;
-  private JobseekerResources  resources;
+  private JobseekerName name;
+  private Jobs          savedJobs;
 
-  public Jobseeker(JobseekerName name)
+  public Jobseeker(JobseekerName jobseekerName)
   {
-    this.name       = name;
-    this.resources  = new JobseekerResources();
+    name       = jobseekerName;
+    savedJobs  = new Jobs();
   }
 
   public void saveJob(Job job)
   {
-    resources.saveJob(job);
+    savedJobs = savedJobs.addNew(job);
   }
 
   public int numberOfSavedJobs()
   {
-    return resources.numberOfSavedJobs();
+    return savedJobs.size();
   }
+
+//  public boolean jobseekerDoesNotOwn(Resume resume)
+//  {
+//    return resume.belongsTo(this);
+//  }
+
+//  public JobApplication applyToJobWithResume(Job job, Resume resume)
+//  {
+//    if (jobseekerDoesNotOwn(resume))
+//    {
+//      resume = new InvalidResume();
+//    }
+//    return job.applyWithResume(this, resume);
+//  }
+
+//  public JobApplicationBuilder startNewApplication()
+//  {
+//    return new JobApplicationBuilder(this);
+//  }
+
+//  public Resume addResume(Resume resume)
+//  {
+//    resources.addResume(resume);
+//    return resume;
+//  }
+//
 
 //  public boolean hasSaved(Job job)
 //  {

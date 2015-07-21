@@ -2,49 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34edb049-83d4-4904-8e4c-30a550cb7969" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/EmployerWorkflow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobseekerWorkflow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemResumes.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationStatus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationSuccess.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerJobs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeDetails.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/RealResume.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeFile.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATSJob.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATSJob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDate.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDetails.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/Candidate.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/Candidate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employer.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATS.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JREQ.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATSJob.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JReqJob.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/object_calisthenics/employer/EmployerTests.java" afterPath="$PROJECT_DIR$/src/test/java/object_calisthenics/employer/EmployerTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employers.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JReqJob.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JReqJob.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplication.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobDescription.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobPostDate.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobPostDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobTitle.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobTitle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Jobs.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Jobs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerName.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerName.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java" afterPath="$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseekers.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseekers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/NullResume.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/NullResume.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resume.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resume.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeName.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeName.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resumes.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resumes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemEmployers.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemEmployers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobseekers.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobseekers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java" afterPath="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="object-calisthenics.iws" />
@@ -75,18 +51,14 @@
         <splitter split-orientation="vertical" split-proportion="0.5">
           <split-first>
             <leaf>
-              <file leaf-file-name="Jobs.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="Jobs.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/Jobs.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.2186589" vertical-offset="0" max-vertical-offset="690">
-                      <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+                      <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
                       <folding>
                         <element signature="e#320#321#0" expanded="true" />
                         <element signature="e#360#361#0" expanded="true" />
-                        <element signature="e#404#405#0" expanded="true" />
-                        <element signature="e#428#429#0" expanded="true" />
-                        <element signature="e#872#873#0" expanded="true" />
-                        <element signature="e#900#901#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -95,9 +67,48 @@
               <file leaf-file-name="Job.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java">
                   <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+                      <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="ATS.java" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATS.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+                      <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="JREQ.java" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JREQ.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.16699801" vertical-offset="6" max-vertical-offset="705">
+                      <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="JobDescription.java" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobDescription.java">
+                  <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-                      <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-                      <folding />
+                      <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+                      <folding>
+                        <element signature="e#346#347#0" expanded="true" />
+                        <element signature="e#386#387#0" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -105,14 +116,9 @@
               <file leaf-file-name="Jobseekers.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseekers.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
                       <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                      <folding>
-                        <element signature="e#252#253#0" expanded="true" />
-                        <element signature="e#303#304#0" expanded="true" />
-                        <element signature="e#645#646#0" expanded="true" />
-                        <element signature="e#679#680#0" expanded="true" />
-                      </folding>
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -120,29 +126,14 @@
               <file leaf-file-name="Jobseeker.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="735">
-                      <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+                      <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#468#469#0" expanded="true" />
-                        <element signature="e#500#501#0" expanded="true" />
-                        <element signature="e#538#539#0" expanded="true" />
-                        <element signature="e#584#585#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="JobseekerResources.java" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-                      <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-                      <folding>
-                        <element signature="e#401#402#0" expanded="true" />
-                        <element signature="e#444#445#0" expanded="true" />
-                        <element signature="e#482#483#0" expanded="true" />
-                        <element signature="e#515#516#0" expanded="true" />
+                        <element signature="e#456#457#0" expanded="true" />
+                        <element signature="e#499#500#0" expanded="true" />
+                        <element signature="e#537#538#0" expanded="true" />
+                        <element signature="e#570#571#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -152,11 +143,21 @@
           </split-first>
           <split-second>
             <leaf>
+              <file leaf-file-name="JobApplications.java" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+                      <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
               <file leaf-file-name="JobApplication.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplication.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-                      <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+                      <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -165,12 +166,10 @@
               <file leaf-file-name="SuccessfulApplication.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-                      <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+                      <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#461#462#0" expanded="true" />
-                        <element signature="e#482#483#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -179,37 +178,10 @@
               <file leaf-file-name="FailedApplication.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-                      <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+                      <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#450#451#0" expanded="true" />
-                        <element signature="e#472#473#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="ApplicationDetails.java" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDetails.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-                      <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="JobApplications.java" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="720">
-                      <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-                      <folding>
-                        <element signature="e#377#378#0" expanded="true" />
-                        <element signature="e#432#433#0" expanded="true" />
-                        <element signature="e#1241#1242#0" expanded="true" />
-                        <element signature="e#1280#1281#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -219,37 +191,35 @@
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/Candidate.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-                      <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+                      <caret line="19" column="5" selection-start-line="16" selection-start-column="20" selection-end-line="19" selection-end-column="5" />
                       <folding>
                         <element signature="imports" expanded="true" />
                         <element signature="e#513#514#0" expanded="true" />
                         <element signature="e#557#558#0" expanded="true" />
-                        <marker date="1437424014000" expanded="true" signature="395:468" placeholder="..." />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="Resume.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="Resume.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resume.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-                      <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+                    <state vertical-scroll-proportion="0.33199194" vertical-offset="0" max-vertical-offset="497">
+                      <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
                       <folding>
-                        <marker date="1437426035000" expanded="true" signature="125:131" placeholder="..." />
+                        <element signature="imports" expanded="true" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="ValidResume.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="ValidResume.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.4755043" vertical-offset="0" max-vertical-offset="694">
-                      <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+                      <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="21" selection-end-column="3" />
                       <folding>
-                        <element signature="e#327#328#0" expanded="true" />
-                        <element signature="e#348#349#0" expanded="true" />
+                        <element signature="imports" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -258,27 +228,11 @@
               <file leaf-file-name="InvalidResume.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-                      <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+                      <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
                       <folding>
-                        <element signature="e#190#191#0" expanded="true" />
-                        <element signature="e#211#212#0" expanded="true" />
-                        <element signature="e#264#265#0" expanded="true" />
-                        <element signature="e#286#287#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="NullResume.java" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/NullResume.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-                      <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-                      <folding>
-                        <element signature="e#184#185#0" expanded="true" />
-                        <element signature="e#206#207#0" expanded="true" />
-                        <element signature="e#281#282#0" expanded="true" />
+                        <element signature="e#555#556#0" expanded="true" />
+                        <element signature="e#576#577#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -295,7 +249,7 @@
               <file leaf-file-name="EmployerTests.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/test/java/object_calisthenics/employer/EmployerTests.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="795">
                       <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
                       <folding>
                         <element signature="imports" expanded="true" />
@@ -307,11 +261,29 @@
               <file leaf-file-name="JobseekerTests.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.3717201" vertical-offset="285" max-vertical-offset="1230">
-                      <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+                    <state vertical-scroll-proportion="0.39387757" vertical-offset="452" max-vertical-offset="1410">
+                      <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
                       <folding>
+                        <element signature="imports" expanded="true" />
                         <element signature="method#canCreateJobseeker#0;class#JobseekerTests#0" expanded="false" />
                         <element signature="method#canSaveJobs#0;class#JobseekerTests#0" expanded="false" />
+                        <element signature="method#canApplyToJReqWithValidResume#0;class#JobseekerTests#0" expanded="false" />
+                        <element signature="method#canApplyToATSWithValidResume#0;class#JobseekerTests#0" expanded="false" />
+                        <element signature="method#jReqApplicationFailsWithInvalidResume#0;class#JobseekerTests#0" expanded="false" />
+                        <element signature="method#jreqApplicationFailsWithoutResume#0;class#JobseekerTests#0" expanded="false" />
+                        <element signature="method#canApplyToATSWithoutResume#0;class#JobseekerTests#0" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="NullResume.java" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/NullResume.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+                      <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -320,14 +292,9 @@
               <file leaf-file-name="Employers.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employers.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
                       <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-                      <folding>
-                        <element signature="e#247#248#0" expanded="true" />
-                        <element signature="e#292#293#0" expanded="true" />
-                        <element signature="e#619#620#0" expanded="true" />
-                        <element signature="e#652#653#0" expanded="true" />
-                      </folding>
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -345,14 +312,10 @@
               <file leaf-file-name="Resumes.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resumes.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-                      <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+                      <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#234#235#0" expanded="true" />
-                        <element signature="e#276#277#0" expanded="true" />
-                        <element signature="e#329#330#0" expanded="true" />
-                        <element signature="e#359#360#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -365,14 +328,10 @@
               <file leaf-file-name="JobWorkflow.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-                      <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+                      <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#370#371#0" expanded="true" />
-                        <element signature="e#409#410#0" expanded="true" />
-                        <element signature="e#729#730#0" expanded="true" />
-                        <element signature="e#763#764#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -381,14 +340,10 @@
               <file leaf-file-name="EmployerWorkflow.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/EmployerWorkflow.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
                       <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#322#323#0" expanded="true" />
-                        <element signature="e#371#372#0" expanded="true" />
-                        <element signature="e#568#569#0" expanded="true" />
-                        <element signature="e#607#608#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -397,42 +352,38 @@
               <file leaf-file-name="JobseekerWorkflow.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobseekerWorkflow.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
                       <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#293#294#0" expanded="true" />
-                        <element signature="e#344#345#0" expanded="true" />
-                        <element signature="e#550#551#0" expanded="true" />
-                        <element signature="e#590#591#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="JobApplicationWorkflow.java" pinned="false" current-in-tab="false">
+              <file leaf-file-name="JobApplicationWorkflow.java" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-                      <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+                    <state vertical-scroll-proportion="0.45661157" vertical-offset="139" max-vertical-offset="1110">
+                      <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#1254#1255#0" expanded="true" />
-                        <element signature="e#1299#1300#0" expanded="true" />
+                        <element signature="e#2125#2126#0" expanded="true" />
+                        <element signature="e#2170#2171#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="ResumeWorkflow.java" pinned="false" current-in-tab="true">
+              <file leaf-file-name="ResumeWorkflow.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.389049" vertical-offset="0" max-vertical-offset="694">
-                      <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+                      <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="26" selection-end-column="5" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#317#318#0" expanded="true" />
-                        <element signature="e#362#363#0" expanded="true" />
+                        <element signature="e#364#365#0" expanded="true" />
+                        <element signature="e#409#410#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -441,15 +392,10 @@
               <file leaf-file-name="SystemJobs.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-                      <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+                      <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
                       <folding>
-                        <element signature="e#235#236#0" expanded="true" />
-                        <element signature="e#273#274#0" expanded="true" />
-                        <element signature="e#315#316#0" expanded="true" />
-                        <element signature="e#363#364#0" expanded="true" />
-                        <element signature="e#388#389#0" expanded="true" />
-                        <element signature="e#422#423#0" expanded="true" />
+                        <element signature="imports" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -458,13 +404,12 @@
               <file leaf-file-name="SystemJobseekers.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobseekers.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-                      <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+                      <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
                       <folding>
+                        <element signature="imports" expanded="true" />
                         <element signature="e#237#238#0" expanded="true" />
                         <element signature="e#287#288#0" expanded="true" />
-                        <element signature="e#449#450#0" expanded="true" />
-                        <element signature="e#489#490#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -473,14 +418,9 @@
               <file leaf-file-name="SystemEmployers.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemEmployers.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
                       <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-                      <folding>
-                        <element signature="e#229#230#0" expanded="true" />
-                        <element signature="e#277#278#0" expanded="true" />
-                        <element signature="e#432#433#0" expanded="true" />
-                        <element signature="e#471#472#0" expanded="true" />
-                      </folding>
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -488,11 +428,10 @@
               <file leaf-file-name="SystemJobApplications.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-                      <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+                    <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="630">
+                      <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                       <folding>
-                        <element signature="e#1006#1007#0" expanded="true" />
-                        <element signature="e#1048#1049#0" expanded="true" />
+                        <element signature="imports" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -501,12 +440,10 @@
               <file leaf-file-name="SystemResumes.java" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemResumes.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
                       <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#213#214#0" expanded="true" />
-                        <element signature="e#252#253#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -524,24 +461,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/EmployerJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/EmployerJobs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemsJobs.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobPost.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationSuccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATSJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JReqJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobPostDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobDescription.java" />
         <option value="$PROJECT_DIR$/src/test/java/object_calisthenics/employer/EmployerTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerName.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employers.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/JobseekerWorkflow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employer.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/EmployerWorkflow.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobTitle.java" />
@@ -550,31 +479,39 @@
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/RealResume.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeName.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerJobs.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Jobs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/Candidate.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resumes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemEmployers.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobseekers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemResumes.java" />
-        <option value="$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATSJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JReqJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplicationBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ValidCandidate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/InvalidCandidate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/Candidate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resume.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java" />
         <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/NullResume.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java" />
-        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/job/JREQ.java" />
+        <option value="$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java" />
       </list>
     </option>
   </component>
@@ -891,24 +828,24 @@
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="test/&#9;FILE&#9;file:///Users/dcavoulacos/object-calisthenics/src/test/java/object_calisthenics/employer/EmployerTests.java" />
+    <property name="SearchEverywhereHistoryKey" value="res&#9;FILE&#9;file:///Users/dcavoulacos/object-calisthenics/src/main/java/object_calisthenics/resume/Resume.java&#10;test/&#9;FILE&#9;file:///Users/dcavoulacos/object-calisthenics/src/test/java/object_calisthenics/employer/EmployerTests.java" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="399" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="401" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="404" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1199" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="399" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="401" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="145" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="404" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1199" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -918,12 +855,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="object_calisthenics.jobapplication" />
       <recent name="object_calisthenics.job.application" />
       <recent name="object_calisthenics" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JobseekerTests.canApplyToAJobOnlyOnce">
-    <configuration default="false" name="JobseekerTests.canApplyToJobWithValidResume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JobseekerTests">
+    <configuration default="false" name="JobseekerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="object_calisthenics.jobseeker.*" />
@@ -935,7 +873,91 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="object_calisthenics.jobseeker" />
       <option name="MAIN_CLASS_NAME" value="object_calisthenics.jobseeker.JobseekerTests" />
-      <option name="METHOD_NAME" value="canApplyToJobWithValidResume" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JobseekerTests.jReqApplicationFailsWithInvalidResume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="object_calisthenics.jobseeker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="object-calisthenics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="object_calisthenics.jobseeker" />
+      <option name="MAIN_CLASS_NAME" value="object_calisthenics.jobseeker.JobseekerTests" />
+      <option name="METHOD_NAME" value="jReqApplicationFailsWithInvalidResume" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JobseekerTests.jreqApplicationFailsWithoutResume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="object_calisthenics.jobseeker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="object-calisthenics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="object_calisthenics.jobseeker" />
+      <option name="MAIN_CLASS_NAME" value="object_calisthenics.jobseeker.JobseekerTests" />
+      <option name="METHOD_NAME" value="jreqApplicationFailsWithoutResume" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JobseekerTests.canApplyToATSWithoutResume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="object_calisthenics.jobseeker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="object-calisthenics" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="object_calisthenics.jobseeker" />
+      <option name="MAIN_CLASS_NAME" value="object_calisthenics.jobseeker.JobseekerTests" />
+      <option name="METHOD_NAME" value="canApplyToATSWithoutResume" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -965,85 +987,6 @@
       <option name="MAIN_CLASS_NAME" value="object_calisthenics.employer.EmployerTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JobseekerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="object_calisthenics.jobseeker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="object-calisthenics" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="object_calisthenics.jobseeker" />
-      <option name="MAIN_CLASS_NAME" value="object_calisthenics.jobseeker.JobseekerTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in object-calisthenics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="object-calisthenics" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JobseekerTests.canApplyToAJobOnlyOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="object_calisthenics.jobseeker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="object-calisthenics" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="object_calisthenics.jobseeker" />
-      <option name="MAIN_CLASS_NAME" value="object_calisthenics.jobseeker.JobseekerTests" />
-      <option name="METHOD_NAME" value="canApplyToAJobOnlyOnce" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1125,6 +1068,14 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="scalaCoverage" />
@@ -1139,14 +1090,6 @@
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1551,19 +1494,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.EmployerTests.canCreateEmployer" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.JobseekerTests.canApplyToJobWithValidResume" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EmployerTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JobseekerTests" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in object-calisthenics" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JobseekerTests.canApplyToAJobOnlyOnce" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JobseekerTests" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JobseekerTests.jReqApplicationFailsWithInvalidResume" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JobseekerTests.jreqApplicationFailsWithoutResume" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JobseekerTests.canApplyToATSWithoutResume" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.EmployerTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JobseekerTests.canApplyToAJobOnlyOnce" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in object-calisthenics" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JobseekerTests" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EmployerTests" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JobseekerTests.canApplyToJobWithValidResume" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JobseekerTests" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EmployerTests" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JobseekerTests.canApplyToATSWithoutResume" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JobseekerTests.jreqApplicationFailsWithoutResume" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JobseekerTests.jReqApplicationFailsWithInvalidResume" />
       </list>
     </recent_temporary>
   </component>
@@ -1581,12 +1524,13 @@
       <workItem from="1431101449573" duration="53563000" />
       <workItem from="1436546687430" duration="6903000" />
       <workItem from="1436632648617" duration="1232000" />
-      <workItem from="1437401615419" duration="20141000" />
+      <workItem from="1437401615419" duration="21084000" />
+      <workItem from="1437488477434" duration="16225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111595000" />
+    <option name="totallyTimeSpent" value="128763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2546" y="-424" width="2433" height="1498" extended-state="0" />
@@ -1601,18 +1545,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948422" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929438" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20221949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28011405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28011405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257306" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2973913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3256351" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3250178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1623,14 +1567,14 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948422" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1649,8 +1593,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3256351" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1672,7 +1616,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1685,12 +1629,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,10 +1647,6 @@
           <folding>
             <element signature="e#320#321#0" expanded="true" />
             <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1790,24 +1725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATSJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40830946" vertical-offset="0" max-vertical-offset="698">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#537#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JReqJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39528432" vertical-offset="0" max-vertical-offset="721">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20689656" vertical-offset="0" max-vertical-offset="435">
@@ -1819,9 +1736,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobTitle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16228747" vertical-offset="0" max-vertical-offset="647">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#123#124#0" expanded="false" />
+            <element signature="e#157#158#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1635514" vertical-offset="0" max-vertical-offset="642">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#122#123#0" expanded="false" />
+            <element signature="e#148#149#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobPostDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17167382" vertical-offset="0" max-vertical-offset="699">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#136#137#0" expanded="false" />
+            <element signature="e#167#168#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28097984" vertical-offset="0" max-vertical-offset="694">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#162#163#0" expanded="false" />
+            <element signature="e#200#201#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32420748" vertical-offset="0" max-vertical-offset="694">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemResumes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemEmployers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobseekers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/EmployerWorkflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobseekerWorkflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobDescription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3477589" vertical-offset="0" max-vertical-offset="647">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="e#346#347#0" expanded="true" />
@@ -1830,13 +1881,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobTitle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16228747" vertical-offset="0" max-vertical-offset="647">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="630">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#123#124#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseekers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/Jobs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1849,327 +1948,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ResumeName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1635514" vertical-offset="0" max-vertical-offset="642">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/EmployerWorkflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobseekerWorkflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/object_calisthenics/employer/EmployerTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/JobseekerResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JobPostDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17167382" vertical-offset="0" max-vertical-offset="699">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/ApplicationDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28097984" vertical-offset="0" max-vertical-offset="694">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobWorkflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/employer/Employers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseeker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="735">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobseeker/Jobseekers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/SuccessfulApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/JobApplications.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/FailedApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="720">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resumes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemEmployers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobseekers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemJobApplications.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding>
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/system/SystemResumes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="21" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3717201" vertical-offset="285" max-vertical-offset="1230">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding>
-            <element signature="method#canCreateJobseeker#0;class#JobseekerTests#0" expanded="false" />
-            <element signature="method#canSaveJobs#0;class#JobseekerTests#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/Jobs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2186589" vertical-offset="0" max-vertical-offset="690">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <marker date="1437426035000" expanded="true" signature="125:131" placeholder="..." />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2177,24 +2010,78 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/NullResume.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/InvalidResume.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/Job.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/ATS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/job/JREQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16699801" vertical-offset="6" max-vertical-offset="705">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/JobApplicationWorkflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45661157" vertical-offset="139" max-vertical-offset="1110">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2125#2126#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/object_calisthenics/employer/EmployerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="795">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/object_calisthenics/jobseeker/JobseekerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39387757" vertical-offset="452" max-vertical-offset="1410">
+          <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#canCreateJobseeker#0;class#JobseekerTests#0" expanded="false" />
+            <element signature="method#canSaveJobs#0;class#JobseekerTests#0" expanded="false" />
+            <element signature="method#canApplyToJReqWithValidResume#0;class#JobseekerTests#0" expanded="false" />
+            <element signature="method#canApplyToATSWithValidResume#0;class#JobseekerTests#0" expanded="false" />
+            <element signature="method#jReqApplicationFailsWithInvalidResume#0;class#JobseekerTests#0" expanded="false" />
+            <element signature="method#jreqApplicationFailsWithoutResume#0;class#JobseekerTests#0" expanded="false" />
+            <element signature="method#canApplyToATSWithoutResume#0;class#JobseekerTests#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2202,35 +2089,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/jobapplication/Candidate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <caret line="19" column="5" selection-start-line="16" selection-start-column="20" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
             <element signature="e#557#558#0" expanded="true" />
-            <marker date="1437424014000" expanded="true" signature="395:468" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/ValidResume.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/resume/Resume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4755043" vertical-offset="0" max-vertical-offset="694">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding>
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/object_calisthenics/ResumeWorkflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.389049" vertical-offset="0" max-vertical-offset="694">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.33199194" vertical-offset="0" max-vertical-offset="497">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
           </folding>
         </state>
       </provider>

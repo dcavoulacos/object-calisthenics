@@ -13,9 +13,10 @@ public class SystemJobs
     this.systemJobs = new Jobs();
   }
 
-  public void postNewJob(Job newJob)
+  public Job addNew(Job newJob)
   {
     systemJobs = systemJobs.addNew(newJob);
+    return newJob;
   }
 
   public int size()
@@ -30,11 +31,11 @@ public class SystemJobs
 
 //  public Job createJReqJob(String jobTitle, Employer employer) {
 //    JobDescription description = new JobDescription(new JobTitle(jobTitle), employer);
-//    return new JReqJob(description);
+//    return new JREQ(description);
 //  }
 //
 //  public Job createATSJob(String jobTitle, Employer employer) {
 //    JobDescription description = new JobDescription(new JobTitle(jobTitle), employer);
-//    return new ATSJob(description);
+//    return new ATS(description);
 //  }
 }

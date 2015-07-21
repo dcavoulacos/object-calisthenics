@@ -1,18 +1,24 @@
 package object_calisthenics.resume;
 
+import object_calisthenics.job.Job;
+import object_calisthenics.jobapplication.Candidate;
+import object_calisthenics.jobapplication.FailedApplication;
+import object_calisthenics.jobapplication.JobApplication;
 import object_calisthenics.jobseeker.Jobseeker;
 
 public class InvalidResume implements Resume
 {
   public InvalidResume() {}
 
-  public boolean exists()
+  public JobApplication buildApplicationFor(Candidate candidate, Job job)
   {
-    return true;
+    return new FailedApplication(candidate, job);
   }
 
-  public boolean belongsTo(Jobseeker jobseeker)
+  public Resume forJobseeker(Jobseeker jobseeker)
   {
-    return false;
+    return this;
   }
+
+  public boolean belongsTo(Jobseeker jobseeker) { return false; }
 }

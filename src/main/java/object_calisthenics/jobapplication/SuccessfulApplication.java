@@ -5,10 +5,10 @@ import object_calisthenics.jobseeker.Jobseeker;
 
 public class SuccessfulApplication implements JobApplication
 {
-  private Candidate          candidate;
-  private ApplicationDetails details;
+  private final Candidate          candidate;
+  private final ApplicationDetails details;
 
-    public SuccessfulApplication(Candidate candidate, Job job)
+  public SuccessfulApplication(Candidate candidate, Job job)
   {
     this.candidate = candidate;
     this.details   = new ApplicationDetails(job);
