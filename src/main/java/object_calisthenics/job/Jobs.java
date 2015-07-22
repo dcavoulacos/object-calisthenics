@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import object_calisthenics.employer.Employer;
-
-import static java.util.stream.Collectors.toList;
 
 public class Jobs
 {
@@ -31,14 +30,15 @@ public class Jobs
   }
 
   public Jobs postedBy(Employer employer) {
-    List<Job> selectJobs = jobs.stream().filter(j -> j.postedBy(employer)).collect(toList());
+    List<Job> selectJobs = jobs.stream().filter(j -> j.postedBy(employer)).collect(
+            Collectors.toList());
     return new Jobs(selectJobs);
   }
-//
-//  public boolean include(Job job)
-//  {
-//    return jobs.contains(job);
-//  }
+
+  public List<Job> toList()
+  {
+    return new ArrayList<>(jobs);
+  }
 
   public int size()
   {

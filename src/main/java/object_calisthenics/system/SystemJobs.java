@@ -28,14 +28,4 @@ public class SystemJobs
   {
     return systemJobs.postedBy(employer);
   }
-
-//  public Job createJReqJob(String jobTitle, Employer employer) {
-//    JobDescription description = new JobDescription(new JobTitle(jobTitle), employer);
-//    return new JREQ(description);
-//  }
-//
-//  public Job createATSJob(String jobTitle, Employer employer) {
-//    JobDescription description = new JobDescription(new JobTitle(jobTitle), employer);
-//    return new ATS(description);
-//  }
 }

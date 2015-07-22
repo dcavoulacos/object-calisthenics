@@ -14,11 +14,6 @@ public class Candidate
     this.resume     = resume;
   }
 
-//  public boolean hasValidResume()
-//  {
-//    return resume.exists() && resume.belongsTo(jobseeker);
-//  }
-
   public boolean is(Jobseeker jobseeker)
   {
     return this.jobseeker == jobseeker;

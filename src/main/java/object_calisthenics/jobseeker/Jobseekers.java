@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import object_calisthenics.job.Job;
+import object_calisthenics.jobapplication.JobApplication;
 
 public class Jobseekers
 {
@@ -24,6 +28,17 @@ public class Jobseekers
     List<Jobseeker> existingJobseekers = new ArrayList<>(jobseekers);
     existingJobseekers.add(newJobseeker);
     return new Jobseekers(existingJobseekers);
+  }
+
+  public Jobseeker applicantFor(JobApplication jobApplication)
+  {
+    return jobseekers.stream().filter(jobApplication::belongsTo).findAny().get();
+  }
+
+  public Jobseekers appliedTo(Job job)
+  {
+    List<Jobseeker> applicants =  jobseekers.stream().filter(js -> js.hasAppliedTo(job)).collect(Collectors.toList());
+    return new Jobseekers(applicants);
   }
 
   public int size()

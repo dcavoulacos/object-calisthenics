@@ -12,4 +12,9 @@ public class ApplicationDetails
     this.job             = job;
     this.applicationDate = new ApplicationDate();
   }
+
+  public boolean isForJob(Job job)
+  {
+    return this.job == job;
+  }
 }

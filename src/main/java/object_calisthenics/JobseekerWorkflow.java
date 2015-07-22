@@ -1,7 +1,10 @@
 package object_calisthenics;
 
+import object_calisthenics.job.Job;
+import object_calisthenics.jobapplication.JobApplications;
 import object_calisthenics.jobseeker.Jobseeker;
 import object_calisthenics.jobseeker.JobseekerName;
+import object_calisthenics.jobseeker.Jobseekers;
 import object_calisthenics.system.SystemJobseekers;
 
 public class JobseekerWorkflow
@@ -17,6 +20,16 @@ public class JobseekerWorkflow
   {
     Jobseeker jobseeker = new Jobseeker(new JobseekerName(name));
     return systemJobseekers.addNew(jobseeker);
+  }
+
+  public Jobseekers applicantsFor(JobApplications jobApplications)
+  {
+    return systemJobseekers.applicantsFor(jobApplications);
+  }
+
+  public Jobseekers applicantsFor(Job job)
+  {
+    return systemJobseekers.withApplicationsSubmittedFor(job);
   }
 
   public int totalJobseekers()

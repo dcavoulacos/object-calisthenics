@@ -3,11 +3,16 @@ package object_calisthenics.jobapplication;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
+import object_calisthenics.employer.Employer;
+import object_calisthenics.job.Job;
 import object_calisthenics.jobseeker.Jobseeker;
 
-import static java.util.stream.Collectors.toList;
 
 public class JobApplications
 {
@@ -25,21 +30,37 @@ public class JobApplications
 
   public JobApplications addNew(JobApplication newApplication)
   {
-    List<JobApplication> applications = new ArrayList<>(jobApplications);
+    Set<JobApplication> applications = new HashSet<>(jobApplications);
     applications.add(newApplication);
     return new JobApplications(applications);
   }
 
-  public JobApplications applicationsBy(Jobseeker jobseeker)
+  public JobApplications forJob(Job job)
   {
-    List<JobApplication> applications = jobApplications.stream().filter(a -> a.belongsTo(jobseeker)).collect(toList());
-    return new JobApplications(applications);
+    return filterBy(a -> a.isForJob(job));
+  }
+
+  public JobApplications submittedBy(Jobseeker jobseeker)
+  {
+    return filterBy(a -> a.belongsTo(jobseeker));
   }
 
   public JobApplications successes()
   {
-    List<JobApplication> successes = jobApplications.stream().filter(a -> a.wasSuccessful()).collect(toList());
-    return new JobApplications(successes);
+    return filterBy(JobApplication::wasSuccessful);
+  }
+
+  private JobApplications filterBy(Predicate<JobApplication> predicate)
+  {
+    List<JobApplication> filteredApplications = jobApplications.stream()
+                                                               .filter(predicate)
+                                                               .collect(Collectors.toList());
+    return new JobApplications(filteredApplications);
+  }
+
+  public List<JobApplication> toList()
+  {
+    return new ArrayList<>(jobApplications);
   }
 
   public int size()

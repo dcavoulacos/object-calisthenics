@@ -25,17 +25,4 @@ public class JREQ implements Job
   {
     return new FailedApplication(candidate, this);
   }
-
-//  public JobApplication applyWithResume(Resume resume, Jobseeker jobseeker)
-//  {
-//    return null;
-//  }
-
-//  public void applyTo(Jobseeker applicant,
-//                      Resume resume,
-//                      SystemJobApplications destination)
-//  {
-//    destination.createNewApplication(this, applicant, resume);
-//  }
 }
-

@@ -1,5 +1,10 @@
 package object_calisthenics.system;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import object_calisthenics.job.Job;
+import object_calisthenics.job.Jobs;
 import object_calisthenics.jobapplication.JobApplication;
 import object_calisthenics.jobapplication.JobApplications;
 import object_calisthenics.jobseeker.Jobseeker;
@@ -13,24 +18,27 @@ public class SystemJobApplications
     this.systemApplications = new JobApplications();
   }
 
-  public JobApplication addNew(JobApplication application)
+  public JobApplication addNew(JobApplication application, Jobseeker jobseeker)
   {
     systemApplications = systemApplications.addNew(application);
+    jobseeker.saveApplication(application);
     return application;
   }
 
-  public JobApplications applicationsBy(Jobseeker jobseeker)
+  public JobApplications forJobs(Jobs jobs)
   {
-    return systemApplications.applicationsBy(jobseeker);
+    List<JobApplication> applications = new ArrayList<>();
+    for (Job job : jobs.toList())
+    {
+      applications.addAll(forJob(job).toList());
+    }
+    return new JobApplications(applications);
   }
 
-//
-//  public void createNewApplication(Job job, Jobseeker jobseeker, Resume resume)
-//  {
-//    Candidate candidate = new Candidate(jobseeker, resume);
-//    ApplicationDetails details = new ApplicationDetails(candidate);
-//    systemApplications = systemApplications.addNew(new JobApplication(job, details));
-//  }
+  public JobApplications forJob(Job job)
+  {
+     return systemApplications.forJob(job);
+  }
 
   public int size()
   {

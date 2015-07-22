@@ -23,4 +23,9 @@ public class FailedApplication implements JobApplication
   {
     return candidate.is(jobseeker);
   }
+
+  public boolean isForJob(Job job)
+  {
+    return details.isForJob(job);
+  }
 }

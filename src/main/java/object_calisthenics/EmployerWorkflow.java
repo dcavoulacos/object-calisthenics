@@ -2,7 +2,6 @@ package object_calisthenics;
 
 import object_calisthenics.employer.Employer;
 import object_calisthenics.employer.EmployerName;
-import object_calisthenics.job.Jobs;
 import object_calisthenics.system.SystemEmployers;
 
 public class EmployerWorkflow

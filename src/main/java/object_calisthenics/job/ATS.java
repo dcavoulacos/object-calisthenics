@@ -4,6 +4,7 @@ import object_calisthenics.employer.Employer;
 import object_calisthenics.jobapplication.Candidate;
 import object_calisthenics.jobapplication.JobApplication;
 import object_calisthenics.jobapplication.SuccessfulApplication;
+import object_calisthenics.jobseeker.Jobseekers;
 
 public class ATS implements Job
 {
@@ -26,13 +27,8 @@ public class ATS implements Job
     return new SuccessfulApplication(candidate, this);
   }
 
-//  public JobApplication applyWithResume(Resume resume, Jobseeker jobseeker)
+//  public Jobseekers applicants()
 //  {
-//    return null;
-//  }
-
-//  public void applyTo(Jobseeker candidate,
-//                      Resume resume,
-//                      SystemJobApplications destination) {
+//
 //  }
 }
