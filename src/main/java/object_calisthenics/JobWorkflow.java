@@ -21,13 +21,13 @@ public class JobWorkflow
   public Job createJREQForEmployer(String jobTitle, Employer employer)
   {
     JREQ jReq = new JREQ(new JobDescription(new JobTitle(jobTitle), employer));
-    return systemJobs.addNew(jReq);
+    return systemJobs.addNew(jReq, employer);
   }
 
   public Job createATSForEmployer(String jobTitle, Employer employer)
   {
     ATS ats = new ATS(new JobDescription(new JobTitle(jobTitle), employer));
-    return systemJobs.addNew(ats);
+    return systemJobs.addNew(ats, employer);
   }
 
   public Jobs jobsPostedBy(Employer employer)

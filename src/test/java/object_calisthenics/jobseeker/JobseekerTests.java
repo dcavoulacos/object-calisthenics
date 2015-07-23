@@ -49,8 +49,8 @@ public class JobseekerTests
 
     jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
 
-    assert perkins.numberOfApplications() == 1;
-    assert perkins.numberOfSuccesses() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 1;
   }
 
   @Test
@@ -64,8 +64,8 @@ public class JobseekerTests
 
     jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
 
-    assert perkins.numberOfApplications() == 1;
-    assert perkins.numberOfSuccesses() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 1;
   }
 
   @Test
@@ -80,8 +80,9 @@ public class JobseekerTests
 
     jobApplicationWorkflow.createApplicationFor(newJob, perkins, resume);
 
-    assert perkins.numberOfApplications() == 1;
-    assert perkins.numberOfSuccesses() == 0;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 0;
+    assert jobApplicationWorkflow.failuresBy(perkins).size() == 1;
   }
 
   @Test
@@ -94,9 +95,12 @@ public class JobseekerTests
 
     jobApplicationWorkflow.createApplicationFor(newJob, perkins);
 
-    assert perkins.numberOfApplications() == 1;
-    assert perkins.numberOfSuccesses() == 0;
-    assert perkins.numberOfFailures() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 0;
+
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 0;
+    assert jobApplicationWorkflow.failuresBy(perkins).size() == 1;
   }
 
   @Test
@@ -109,8 +113,8 @@ public class JobseekerTests
 
     jobApplicationWorkflow.createApplicationFor(newJob, perkins);
 
-    assert perkins.numberOfApplications() == 1;
-    assert perkins.numberOfSuccesses() == 1;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 1;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 1;
   }
 
   @Test
@@ -128,8 +132,8 @@ public class JobseekerTests
     jobApplicationWorkflow.createApplicationFor(otherJob, perkins, otherResume);
 
     assert jobApplicationWorkflow.totalApplications() == 2;
-    assert perkins.numberOfApplications() == 2;
-    assert perkins.numberOfSuccesses() == 2;
+    assert jobApplicationWorkflow.applicationsBy(perkins).size() == 2;
+    assert jobApplicationWorkflow.successesBy(perkins).size() == 2;
   }
 
 }

@@ -7,20 +7,11 @@ import object_calisthenics.jobapplication.Candidate;
 import object_calisthenics.jobapplication.FailedApplication;
 import object_calisthenics.jobapplication.JobApplication;
 
-public class JREQ implements Job
+public class NullJob implements Job
 {
-  private final JobDescription description;
-  private final JobPostDate    postDate;
-
-  public JREQ(JobDescription jobDescription)
-  {
-    description = jobDescription;
-    postDate    = new JobPostDate();
-  }
-
   public boolean postedBy(Employer employer)
   {
-    return description.postedBy(employer);
+    return false;
   }
 
   public JobApplication applyWithoutResume(Candidate candidate)
@@ -30,16 +21,11 @@ public class JREQ implements Job
 
   public JobApplication applyWithoutResume(Candidate candidate, Date date)
   {
-    return new FailedApplication(candidate, this, date);
+    return  new FailedApplication(candidate, this, date);
   }
 
   public Job forEmployer(Employer employer)
   {
-    Job job = new NullJob();
-    if (postedBy(employer))
-    {
-      job = this;
-    }
-    return job;
+    return this;
   }
 }

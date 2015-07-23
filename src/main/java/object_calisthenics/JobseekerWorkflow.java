@@ -1,6 +1,9 @@
 package object_calisthenics;
 
+import java.util.Date;
+
 import object_calisthenics.job.Job;
+import object_calisthenics.job.Jobs;
 import object_calisthenics.jobapplication.JobApplications;
 import object_calisthenics.jobseeker.Jobseeker;
 import object_calisthenics.jobseeker.JobseekerName;
@@ -27,9 +30,24 @@ public class JobseekerWorkflow
     return systemJobseekers.applicantsFor(jobApplications);
   }
 
-  public Jobseekers applicantsFor(Job job)
+  public Jobseekers jobseekersWithApplicationsFor(Jobs jobs)
   {
-    return systemJobseekers.withApplicationsSubmittedFor(job);
+    return systemJobseekers.appliedToJobs(jobs);
+  }
+
+  public Jobseekers jobseekersWithApplicationsFor(Job job)
+  {
+    return systemJobseekers.appliedToJob(job);
+  }
+
+  public Jobseekers jobseekersWithApplicationsSubmitted(Date date)
+  {
+    return systemJobseekers.appliedOnDate(date);
+  }
+
+  public Jobseekers jobseekersWithApplicationsForJobFromDate(Job job, Date date)
+  {
+    return systemJobseekers.appliedToJobOnDate(job, date);
   }
 
   public int totalJobseekers()

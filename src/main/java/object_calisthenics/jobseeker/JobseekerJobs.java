@@ -1,5 +1,7 @@
 package object_calisthenics.jobseeker;
 
+import java.util.Date;
+
 import object_calisthenics.job.Job;
 import object_calisthenics.job.Jobs;
 import object_calisthenics.jobapplication.JobApplication;
@@ -49,5 +51,15 @@ public class JobseekerJobs
   public boolean hasApplicationFor(Job job)
   {
     return applications.forJob(job).size() != 0;
+  }
+
+  public boolean hasApplicationsFrom(Date date)
+  {
+    return applications.submittedOn(date).size() != 0;
+  }
+
+  public boolean hasApplicationForJobOnDate(Job job, Date date)
+  {
+    return applications.forJob(job).submittedOn(date).size() != 0;
   }
 }

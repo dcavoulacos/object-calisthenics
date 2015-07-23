@@ -1,8 +1,10 @@
 package object_calisthenics.employer;
 
+import java.util.Date;
+
 import object_calisthenics.JobApplicationWorkflow;
-import object_calisthenics.JobWorkflow;
 import object_calisthenics.JobseekerWorkflow;
+import object_calisthenics.job.Job;
 import object_calisthenics.job.Jobs;
 import object_calisthenics.jobapplication.JobApplications;
 import object_calisthenics.jobseeker.Jobseekers;
@@ -10,24 +12,48 @@ import object_calisthenics.jobseeker.Jobseekers;
 public class Employer
 {
   private EmployerName name;
+  private Jobs         jobPosts;
 
   public Employer(EmployerName employerName)
   {
-    this.name = employerName;
+    name     = employerName;
+    jobPosts = new Jobs();
   }
 
-  public Jobs postedJobs(JobWorkflow jobWorkflow)
+  public void postJob(Job newJob)
   {
-    return jobWorkflow.jobsPostedBy(this);
+    jobPosts = jobPosts.addNew(newJob);
   }
 
-  public JobApplications receivedApplications(JobApplicationWorkflow applicationWorkflow, Jobs myJobs)
+  public Jobs postedJobs()
   {
-    return applicationWorkflow.applicationsFor(myJobs);
+    //todo: can't have a getter! find another way to do this - query over jobs?
+    return jobPosts;
   }
 
-  public Jobseekers applicants(JobseekerWorkflow jobseekerWorkflow, JobApplications applications)
+  public JobApplications receivedApplications(JobApplicationWorkflow applicationWorkflow)
   {
-    return jobseekerWorkflow.applicantsFor(applications);
+    return applicationWorkflow.applicationsFor(jobPosts);
+  }
+
+  public Jobseekers applicants(JobseekerWorkflow jobseekerWorkflow)
+  {
+    return jobseekerWorkflow.jobseekersWithApplicationsFor(jobPosts);
+  }
+
+  public JobApplications applicationsFor(Job job, JobApplicationWorkflow applicationWorkflow)
+  {
+      return applicationWorkflow.applicationsFor(job);
+//    return jobseekerWorkflow.jobseekersWithApplicationsFor(job.forEmployer(this));
+  }
+
+  public void forDate(Date date)
+  {
+//    return jobseekerWorkflow.jobseekersWithApplicationsSubmitted(date);
+  }
+
+  public void forJobAndDate(Job job, Date date)
+  {
+//    return jobseekerWorkflow.jobseekersWithApplicationsFor(job).forDate(date);
   }
 }

@@ -1,5 +1,7 @@
 package object_calisthenics.jobapplication;
 
+import java.util.Date;
+
 import object_calisthenics.job.Job;
 
 public class ApplicationDetails
@@ -13,8 +15,19 @@ public class ApplicationDetails
     this.applicationDate = new ApplicationDate();
   }
 
+  public ApplicationDetails(Job job, Date date)
+  {
+    this.job = job;
+    applicationDate = new ApplicationDate(date);
+  }
+
   public boolean isForJob(Job job)
   {
     return this.job == job;
+  }
+
+  public boolean submittedOn(Date date)
+  {
+    return applicationDate.is(date);
   }
 }

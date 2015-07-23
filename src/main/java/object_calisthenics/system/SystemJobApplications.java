@@ -40,6 +40,21 @@ public class SystemJobApplications
      return systemApplications.forJob(job);
   }
 
+  public JobApplications applicationsBy(Jobseeker jobseeker)
+  {
+    return systemApplications.submittedBy(jobseeker);
+  }
+
+  public JobApplications successesBy(Jobseeker jobseeker)
+  {
+    return applicationsBy(jobseeker).successes();
+  }
+
+  public JobApplications failuresBy(Jobseeker jobseeker)
+  {
+    return applicationsBy(jobseeker).failures();
+  }
+
   public int size()
   {
     return systemApplications.size();

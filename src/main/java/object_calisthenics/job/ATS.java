@@ -1,10 +1,11 @@
 package object_calisthenics.job;
 
+import java.util.Date;
+
 import object_calisthenics.employer.Employer;
 import object_calisthenics.jobapplication.Candidate;
 import object_calisthenics.jobapplication.JobApplication;
 import object_calisthenics.jobapplication.SuccessfulApplication;
-import object_calisthenics.jobseeker.Jobseekers;
 
 public class ATS implements Job
 {
@@ -27,8 +28,18 @@ public class ATS implements Job
     return new SuccessfulApplication(candidate, this);
   }
 
-//  public Jobseekers applicants()
-//  {
-//
-//  }
+  public JobApplication applyWithoutResume(Candidate candidate, Date date)
+  {
+    return new SuccessfulApplication(candidate, this, date);
+  }
+
+  public Job forEmployer(Employer employer)
+  {
+    Job job = new NullJob();
+    if (postedBy(employer))
+    {
+      job = this;
+    }
+    return job;
+  }
 }

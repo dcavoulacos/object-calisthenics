@@ -13,9 +13,10 @@ public class SystemJobs
     this.systemJobs = new Jobs();
   }
 
-  public Job addNew(Job newJob)
+  public Job addNew(Job newJob, Employer employer)
   {
     systemJobs = systemJobs.addNew(newJob);
+    employer.postJob(newJob);
     return newJob;
   }
 

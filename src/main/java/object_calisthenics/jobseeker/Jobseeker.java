@@ -1,5 +1,7 @@
 package object_calisthenics.jobseeker;
 
+import java.util.Date;
+
 import object_calisthenics.job.Job;
 import object_calisthenics.jobapplication.JobApplication;
 
@@ -27,6 +29,16 @@ public class Jobseeker
   public boolean hasAppliedTo(Job job)
   {
     return trackedJobs.hasApplicationFor(job);
+  }
+
+  public boolean appliedToJobOn(Date date)
+  {
+    return trackedJobs.hasApplicationsFrom(date);
+  }
+
+  public boolean hasAppliedToJobOnDate(Job job, Date date)
+  {
+    return trackedJobs.hasApplicationForJobOnDate(job, date);
   }
 
   public boolean hasNotAppliedTo(Job job)

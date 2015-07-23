@@ -3,16 +3,15 @@ package object_calisthenics.jobapplication;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import object_calisthenics.employer.Employer;
 import object_calisthenics.job.Job;
 import object_calisthenics.jobseeker.Jobseeker;
-
 
 public class JobApplications
 {
@@ -40,6 +39,11 @@ public class JobApplications
     return filterBy(a -> a.isForJob(job));
   }
 
+  public JobApplications submittedOn(Date date)
+  {
+    return filterBy(a -> a.submittedOn(date));
+  }
+
   public JobApplications submittedBy(Jobseeker jobseeker)
   {
     return filterBy(a -> a.belongsTo(jobseeker));
@@ -48,6 +52,11 @@ public class JobApplications
   public JobApplications successes()
   {
     return filterBy(JobApplication::wasSuccessful);
+  }
+
+  public JobApplications failures()
+  {
+    return filterBy(a -> !a.wasSuccessful());
   }
 
   private JobApplications filterBy(Predicate<JobApplication> predicate)
